@@ -1,22 +1,22 @@
-<h1>Muon xoa san pham voi thong tin sau phai khong ?</h1>
-<div [hidden]="deleted">
-  <table>
+<h1>Muốn xoá sản phẩm với thông tin sau phải không ?</h1>
+<div [hidden]="deleted" class="div-size">
+  <table class="table-size">
     <tr>
-      <td>Tieu de</td>
+      <td class="td-font td-size">tiêu đề</td>
       <td>{{book.title}}</td>
     </tr>
     <tr>
-      <td>Tac gia</td>
+      <td class="td-font td-size">Tác giả</td>
       <td>{{book.author}}</td>
     </tr>
     <tr>
-      <td>Mo ta</td>
+      <td class="td-font td-size"> Mô tả</td>
       <td>{{book.description}}</td>
     </tr>
   </table>
 
-  <button class="btn btn-danger"(click)="deleteThisBook()">Xoa</button>
+  <button class="btn btn-danger"(click)="deleteThisBook()">Xoá</button>
 </div>
 <div [hidden]="!deleted">{{message}}</div>
-<button  class="btn btn-success" routerLink="">Thoat</button>
+<button  class="btn btn-success" routerLink="">Thoát</button>
 
